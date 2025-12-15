@@ -98,7 +98,7 @@ args <- list(
 
 ## Run DICEr
 ```{r, eval=FALSE}
-main(args)
+DICEr(args)
 ```
 
 ## Outputs include:
