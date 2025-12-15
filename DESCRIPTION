@@ -1,6 +1,6 @@
 Package: DICEr
 Title: Deep Significance Clustering for Clinical Risk Stratification
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     c(person(given="Sarah", family="Ayton", , "saa7050@med.cornell.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5247-9912")),
     person(given="Yiye", family="Zhang", , "yiz2014@med.cornell.edu", role = c("aut"), comment = c(ORCID = "0000-0003-3494-2699")))
