@@ -1,4 +1,4 @@
-# DICEr: Deep significance clustering
+# DICEr: Deep Significance Clustering for Clinical Risk Stratification
 
 **DICEr** is an R package implementing a deep learning framework for representation learning, clustering, and outcome-aware classification using autoencoders, k-means clustering, and joint optimization.  
 It is designed for high-dimensional biomedical data, where discovering latent subgroups with distinct outcome profiles is critical.
