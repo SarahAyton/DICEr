@@ -39,25 +39,6 @@
 #' }
 #' @import torch ggplot2
 #' @export
-
-# Placeholder for the yf_dataset_withdemo class
-yf_dataset_withdemo <- function(path, file_name, n_z) {
-  data <- readRDS(paste0(path, file_name))
-  dataset <- list(
-    data_x = data[[1]],
-    data_v = data[[2]],
-    data_y = data[[3]],
-    n_samples = (length(data[[1]])/n_z),
-    n_cat = NULL,
-    M = NULL,
-    C = torch::torch_tensor(rep(0, (length(data[[1]])/n_z)), dtype = torch_long()),
-    pred_C = torch::torch_tensor(rep(0, (length(data[[1]])/n_z)), dtype = torch_long()),
-    rep = NULL
-  )
-  return(dataset)
-}
-
-# Define the main function
 main <- function(args) {
   set.seed(args$seed)
 
@@ -564,4 +545,21 @@ main <- function(args) {
   print(paste("random_state_list=", random_state_list))
   print(paste("saved_iter_list=", saved_iter_list))
   print(paste("saved_iter = ", saved_iter))
+}
+
+# Placeholder for the yf_dataset_withdemo class
+yf_dataset_withdemo <- function(path, file_name, n_z) {
+  data <- readRDS(paste0(path, file_name))
+  dataset <- list(
+    data_x = data[[1]],
+    data_v = data[[2]],
+    data_y = data[[3]],
+    n_samples = (length(data[[1]])/n_z),
+    n_cat = NULL,
+    M = NULL,
+    C = torch::torch_tensor(rep(0, (length(data[[1]])/n_z)), dtype = torch_long()),
+    pred_C = torch::torch_tensor(rep(0, (length(data[[1]])/n_z)), dtype = torch_long()),
+    rep = NULL
+  )
+  return(dataset)
 }

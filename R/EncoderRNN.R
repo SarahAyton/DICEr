@@ -62,7 +62,7 @@
 
 
 
-EncoderRNN <- nn_module(
+EncoderRNN <- torch::nn_module(
   "EncoderRNN",
 
   initialize = function(input_size, nhidden, nlayers, dropout) {
