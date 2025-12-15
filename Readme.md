@@ -1,14 +1,3 @@
----
-title: "Readme"
-author: "Sarah Ayton"
-date: "2025-12-15"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # DICEr: Deep significance clustering
 
 **DICEr** is an R package implementing a deep learning framework for representation learning, clustering, and outcome-aware classification using autoencoders, k-means clustering, and joint optimization.  
@@ -39,10 +28,10 @@ DICEr is implemented using **torch for R**, enabling GPU acceleration and scalab
 
 ```{r}
 # Install dependencies
-# install.packages(c("torch", "ggplot2", "cluster", "pROC"))
+install.packages(c("torch", "ggplot2", "cluster", "pROC"))
 
 # Install DICEr (after torch is configured)
-# remotes::install_github("YiyeZhangLab/DICEr")
+remotes::install_github("YiyeZhangLab/DICEr")
 ```
 
 Note: torch must be properly installed using torch::install_torch().
